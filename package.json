@@ -5,7 +5,8 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon app.js"
+    "start": "nodemon --exec babel-node app.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,11 @@
     "sequelize-cli": "^6.2.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.1",
+    "@babel/node": "^7.13.0",
+    "@babel/preset-env": "^7.13.5",
+    "jest": "^26.6.3",
     "nodemon": "^2.0.7"
   }
 }
